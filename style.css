@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+  }
+  
+  header.main-header {
+    position: sticky;
+    top: 0;
+    background: #333;
+    z-index: 10;
+  }
+  
+  header.main-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  header.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header.main-header nav ul li a:hover {
+    color: #ffd700;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, #0073e6, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+  }
+  
+  .animation-text {
+    font-size: 1.5rem;
+    animation: fadeIn 2s infinite;
+  }
+  
+  @keyframes fadeIn {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #ffd700;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ffac00;
+  }
+  
+  /* Sections */
+  section {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  .skills-list, .tools-list, .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Skills and Tools Icon Enhancements */
+.skills-list .skill i,
+.tools-list .tool i {
+    font-size: 3rem; /* Increased icon size */
+    margin-bottom: 0.5rem;
+}
+
+.skill, .tool {
+    width: 120px; /* Adjust width for larger icons */
+    height: 150px; /* Adjust height */
+    padding: 1.5rem;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill:hover, .tool:hover {
+    transform: scale(1.2); /* Increased hover effect */
+    background: #f0f0f0; /* Add subtle background change on hover */
+}
+
+/* Full-Stack Developer Animation */
+.animation-text {
+    font-size: 1.8rem; /* Adjusted size */
+    font-weight: bold;
+    animation: colorChange 3s infinite; /* Added color animation */
+}
+
+/* Keyframes for Color Change Animation */
+@keyframes colorChange {
+    0% {
+        color: #ffd700; /* Start with gold */
+    }
+    25% {
+        color: #00c6ff; /* Light blue */
+    }
+    50% {
+        color: #ff5733; /* Orange-red */
+    }
+    75% {
+        color: #33ff57; /* Green */
+    }
+    100% {
+        color: #ffd700; /* Back to gold */
+    }
+}
