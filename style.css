@@ -8,7 +8,7 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: #f4f4f9;
+    background: linear-gradient(135deg, #4fc4d3, #e55c5c);
     color: #333;
   }
   
@@ -40,7 +40,7 @@
   
   /* Hero Section */
   .hero {
-    background: linear-gradient(135deg, #0073e6, #00c6ff);
+    background: linear-gradient(135deg, #69d437, #00c6ff);
     color: white;
     text-align: center;
     padding: 5rem 1rem;
@@ -71,7 +71,7 @@
   
   .btn {
     display: inline-block;
-    background: #ffd700;
+    background: #8184c4;
     color: black;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
@@ -81,7 +81,7 @@
   }
   
   .btn:hover {
-    background: #ffac00;
+    background: #dfd6c4;
   }
   
   /* Sections */
@@ -113,16 +113,24 @@
 }
 
 .skill, .tool {
-    width: 120px; /* Adjust width for larger icons */
-    height: 150px; /* Adjust height */
-    padding: 1.5rem;
-    transition: transform 0.3s ease, background 0.3s ease;
+  width: 120px; /* Maintain width */
+  height: 150px; /* Maintain height */
+  padding: 1.5rem;
+  border-radius: 10px; /* Square shape with slightly rounded corners */
+  transition: transform 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #edecf1, #230c5d); /* Light background to emphasize the shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .skill:hover, .tool:hover {
-    transform: scale(1.2); /* Increased hover effect */
-    background: #f0f0f0; /* Add subtle background change on hover */
+  transform: scale(1.1); /* Slightly reduced hover effect for subtlety */
+  background: linear-gradient(135deg, #edecf1, #cb3e66);
 }
+
 
 /* Full-Stack Developer Animation */
 .animation-text {
@@ -130,22 +138,29 @@
     font-weight: bold;
     animation: colorChange 3s infinite; /* Added color animation */
 }
+.about-img {
+  width: 250px;
+  height: 250px; /* Set the height equal to the width */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
 
 /* Keyframes for Color Change Animation */
 @keyframes colorChange {
     0% {
-        color: #ffd700; /* Start with gold */
+        color: #0f0a0a; /* Start with gold */
     }
     25% {
-        color: #00c6ff; /* Light blue */
+        color: #0a4859; /* Light blue */
     }
     50% {
-        color: #ff5733; /* Orange-red */
+        color: #89230c; /* Orange-red */
     }
     75% {
-        color: #33ff57; /* Green */
+        color: #0b4516; /* Green */
     }
     100% {
-        color: #ffd700; /* Back to gold */
+        color: #ca158d; /* Back to gold */
     }
 }
